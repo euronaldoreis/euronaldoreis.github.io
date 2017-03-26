@@ -11,14 +11,13 @@
 <body>
 
 <div class="safe-area">
-	<div class="container">
-		<header>
+		<header class="fixed-top">
 			<div class="header">
 				
 				<div class="row">
 					
 					<div class="col-7">
-						<img src="img/logo2.png" alt="">
+						<a href="#"><img src="img/logo2.png" alt="Cest'in"></a>
 					</div>
 					<div class="col-5">
 						<ul class="nav">
@@ -32,25 +31,27 @@
 			</div><!-- header -->
 		</header>
 
+		<div class="container">
+
 		<div id="carousel" class="carousel slide" data-ride="carousel">
 			
 			<div class="carousel-inner">
 					
 				<div class="carousel-item active">
 					<div class="row">
-						
 						<div class="col">
 							<div class="wrapper-carousel">
-								<h2 class="headline">Inspire your inspiration</h2>
-								<p class="description">Simples to use for your app, products showcase and your inspiration </p>
-								<p class="text">Lorem ipsum, Lorem ipsum. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum, Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum. Lorem ipsum Lorem ipsum.</p>
+								<h2 class="headline text-center">Inspire your inspiration</h2>
+								<p class="description text-center">Simples to use for your app, products showcase and your inspiration </p>
+								<p class="text text-center">Lorem ipsum, Lorem ipsum. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum, Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum. Lorem ipsum Lorem ipsum.</p>
+								<div class="button-products text-center">
+									<a href="#products">Conheça nossos produtos!</a>
+								</div>
 							</div><!-- wrapper carousel -->
 						</div><!-- col text -->
-						<div class="col">
-							<img src="img/" class="mx-auto d-block img-fluid" alt="">
-						</div><!-- col img -->
 					</div><!-- row -->
 				</div><!-- carouse item -->
+
 				<div class="carousel-item">
 					<div class="row">
 						
@@ -59,12 +60,8 @@
 								<h2 class="headline">Inspire your inspiration</h2>
 								<p class="description">Simples to use for your app, products showcase and your inspiration </p>
 								<p class="text">Lorem ipsum, Lorem ipsum. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum, Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum. Lorem ipsum Lorem ipsum.</p>
-								<img src="img/apps-button.png" alt="">
 							</div><!-- wrapper carousel -->
 						</div><!-- col text -->
-						<div class="col">
-							<img src="img/" class="mx-auto d-block img-fluid" alt="">
-						</div><!-- col img -->
 					</div><!-- row -->
 				</div>
 
@@ -81,6 +78,44 @@
 </div><!-- safe area -->
 
 <section>
+<div class="about">
+	<div class="container">
+		<h3 class="headline text-center">A empresa</h3>
+			<p class="description text-center">Somos uma empresa especializada no fornecimento de cestas alimentícias, com foco no seguimento corporativo.</p>
+				<div class="row text-center">
+					<div class="col-md-4">
+						<span class="fa-stack fa-4x">
+							<i class="fa fa-circle fa-stack-2x text-primary"></i>
+							<i class="fa fa-rocket fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="service-heading">Entrega veloz que vc respeita!</h4>
+						<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+					
+					</div><!-- col -->
+					<div class="col-md-4">
+						<span class="fa-stack fa-4x">
+							<i class="fa fa-circle fa-stack-2x text-primary"></i>
+							<i class="fa fa-handshake-o fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="service-heading">Planos topzeira</h4>
+ 						<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+					
+					</div><!-- col -->
+					<div class="col-md-4">
+						<span class="fa-stack fa-4x">
+							<i class="fa fa-circle fa-stack-2x text-primary"></i>
+							<i class="fa fa-heart fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="service-heading">Q U A L I D A D E</h4>
+						<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+					
+					</div><!-- col -->
+				</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- about -->
+</section>
+
+<section id="products">
 	<div class="feature">
 		<div class="container">
 			<h2 class="headline text-center">Nossos produtos</h2>
@@ -129,63 +164,57 @@
 		<div class="container">
 			<h4 class="headline text-center">Vamos marcar um cafezinho?</h4>
 			<p class="description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
-			<form action="#" method="post">
 				<div class="row">
-					<div class="col-6 offset-lg-2">
-						<input type="text" class="form-control form-control-lg placeholder="Enter your email to update">
-					</div><!-- col 10 -->
-					<div class="col-2">
-						<button class="btn btn-block btn-lg btn-warning">submit</button>
-					</div><!-- col 2 -->
+					<div class="col-lg-12">
+					<form action="">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Seu nome" id="name" required data-validation-required-message="Por favor, insira seu nome." aria-invalid="false">
+									<p class="help-block text-danger"></p>
+								</div><!-- form-group -->
+								<div class="form-group">
+									<input type="email" class="form-control" placeholder="Seu melhor Email" id="email" required data-validation-required-message="Por favor, insira seu email.">
+									<p class="help-block text-danger"></p>
+								</div><!-- form-group -->
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Seu telefone" id="fone" required data-validation-required-message="Por favor, insira seu número de telefone.">
+									<p class="help-block text-danger"></p>
+								</div><!-- form-group -->
+							</div><!-- col-md-6 -->
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<textarea class="form-control" placeholder="Escreva sua mensagem aqui!" id="mensagem" required data-validation-required-message="Por favor, escreva sua mensagem."></textarea>
+									<p class="help-block text-danger"></p>	
+								</div><!-- form-group -->
+							</div><!-- col-md-6 -->
+							<div class="col-lg-12 text-center">
+								<button type="submit" class="btn btn-x1">Enviar</button>
+							</div>
+						</div><!-- row -->
+					</form>
+					</div><!-- col-lg-12 -->
 				</div><!-- row -->
-			</form>
+				<div class="row">
+					<div class="col-md-5">
+						<span class="text">Cest'In © Cestas Alimentícias. Todos os direitos reservados</span>
+					</div>
+					<div class="col-md-4">
+						<ul class="list-inline social-buttons">
+							<li>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-instagram"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
 
-			<img src="img/social-connect.png" class="mx-auto d-block img-fluid" alt="">
-
-			<div class="row">
-				<div class="col">
-					<ul class="nav flex-column">
-						<li class="nav-item"><a class="nav-link" href="#">HALOVIETNAM LTD</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">66, Dang Van ngu, Dong Da/a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Hanoi, Vietnam</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">contact@halovietnam.com</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">+844 35149182</a></li>
-					</ul>
-				</div>
-				<div class="col">
-					<ul class="nav flex-column">
-						<li class="nav-item"><a class="nav-link" href="#">Examples</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">License</a></li>
-					</ul>
-				</div>
-				<div class="col">
-					<ul class="nav flex-column">
-						<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Privacy</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Terms</a></li>
-					</ul>
-				</div>
-				<div class="col">
-					<ul class="nav flex-column">
-						<li class="nav-item"><a class="nav-link" href="#">item</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">item</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">item</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">item</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">item</a></li>
-					</ul>
-				</div>
-				<div class="col">
-					<ul class="nav flex-column">
-						<li class="nav-item"><a class="nav-link" href="#">item</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">item</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">item</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">item</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">item</a></li>
-					</ul>
-				</div>
-			</div>
 		</div><!-- container -->
 	</div><!-- footer -->
 
