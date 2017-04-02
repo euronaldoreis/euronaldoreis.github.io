@@ -3,12 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cest'in - A Cesta pra sua Empresa</title>
+	<title>Cest'in - A Cesta para sua Empresa</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">	
 </head>
-<body>
+<body id="body">
 
 <div class="safe-area">
 		<header class="fixed-top">
@@ -16,60 +16,46 @@
 				
 				<div class="row">
 					
-					<div class="col-7">
-						<a href="#"><img src="img/logo2.png" alt="Cest'in"></a>
-					</div>
+					<div class="col-6">
+						<a href="#body" class="scrollSuave"><h1></h1></a>
+					</div><!-- col 7 -->
 					<div class="col-5">
-						<ul class="nav">
-						<li class="nav-item"><a class="nav-link" href="#">A empresa</a></li class="nav-item">
-			 			<li class="nav-item"><a class="nav-link" href="#">Para sua empresa	</a></li class="nav-item">
-			 			<li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-						</ul>
-					</div>
+						<div class="navbar-toggleable-md">
+						<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar" aria-controlss="navbar" aria-expanded="false" aria-label="toggle navigation">
+							<i id="bars" class="fa fa-bars fa-inverse"></i>
+						</button>
+							<div class="collapse navbar-collapse" id="navbar">
+								<ul class="nav">
+									<li class="nav-item"><a class="nav-link scrollSuave" href="#aempresa">A empresa</a></li class="nav-item">
+				 					<li class="nav-item"><a class="nav-link scrollSuave" href="#empresa">Para sua empresa</a></li class="nav-item">
+				 					<li class="nav-item"><a class="nav-link scrollSuave" href="#cestas">Nossas Cestas</a></li>
+				 					<li class="nav-item"><a class="nav-link scrollSuave" href="#contato">Contato</a></li>
+								</ul>
+							</div><!-- collapse -->
+						</div><!-- toggle navbar -->
+					</div><!-- col 5 -->
 
 				</div><!-- row -->
 			</div><!-- header -->
 		</header>
 
 		<div class="container">
-
 		<div id="carousel" class="carousel slide" data-ride="carousel">
-			
-			<div class="carousel-inner">
-					
+			<div class="carousel-inner">				
 				<div class="carousel-item active">
 					<div class="row">
 						<div class="col">
 							<div class="wrapper-carousel">
-								<h2 class="headline text-center">Inspire your inspiration</h2>
+								<h2 class="headline text-center">Excelência em Cestas Alimentícias</h2>
 								<p class="description text-center">Simples to use for your app, products showcase and your inspiration </p>
 								<p class="text text-center">Lorem ipsum, Lorem ipsum. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum, Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum. Lorem ipsum Lorem ipsum.</p>
 								<div class="button-products text-center">
-									<a href="#products">Conheça nossos produtos!</a>
+									<a class="scrollSuave" href="#cestas">Conheça nossos produtos!</a>
 								</div>
 							</div><!-- wrapper carousel -->
 						</div><!-- col text -->
 					</div><!-- row -->
 				</div><!-- carouse item -->
-
-				<div class="carousel-item">
-					<div class="row">
-						
-						<div class="col">
-							<div class="wrapper-carousel">
-								<h2 class="headline">Inspire your inspiration</h2>
-								<p class="description">Simples to use for your app, products showcase and your inspiration </p>
-								<p class="text">Lorem ipsum, Lorem ipsum. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum, Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum. Lorem ipsum Lorem ipsum.</p>
-							</div><!-- wrapper carousel -->
-						</div><!-- col text -->
-					</div><!-- row -->
-				</div>
-
-				  <ol class="carousel-indicators">
-				    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-				    <li data-target="#carousel" data-slide-to="1"></li>
-				  </ol>
-
 			</div><!-- carousel inner -->
 
 		</div><!-- carousel -->
@@ -77,7 +63,7 @@
 
 </div><!-- safe area -->
 
-<section>
+<section id="aempresa">
 <div class="about">
 	<div class="container">
 		<h3 class="headline text-center">A empresa</h3>
@@ -115,51 +101,81 @@
 	</div><!-- about -->
 </section>
 
-<section id="products">
+<section id="empresa">
+<div class="empresa">
+	<div class="container">
+		<h3 class="headline text-center">Para a sua empresa</h3>
+		<p class="description text-center">Vantagens e benefícios que só a gente oferece para sua empresa e seus funcionários.</p>
+	</div><!-- container -->
+</div><!-- empresa -->
+</section>
+
+<section id="cestas">
 	<div class="feature">
 		<div class="container">
-			<h2 class="headline text-center">Nossos produtos</h2>
+			<h2 class="headline text-center">Nossas Cestas</h2>
 			<p class="description text-center">Lorem ipsum, Lorem ipsum. Lorem ipsum, Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
 
 			<div class="row">
+			<div class="col">
+				<article>
+					<div class="feature-item">
+						
+							<header>
+								<div class="feature-heading">
+									<h3 class="headline">Cesta Econômica</h3>
+									<p class="text">ALIMENTOS</p>
+									<p class="text">3 KG - Açúcar</br>3 KG - Arroz</br> 2 KG - Feijão</br>1 PCT	- Macarrão Espaguete</br>1 KG - Farinha</br>1 Lata - Óleo de Soja</br>1 KG - Sal Refinado</br>1 PCT Pequeno - Leite em Pó</br>1 PCT Pequeno - Café</br>1 - Extrato de Tomate</br>1 Lata - Salsicha</br>1 Lata - Sardinha</br>1 Pote - Tempero Completo</br>1 PCT - Biscoito Cream Crack</br> 1 - Manteiga</br>1 Vinagre</p>
+									<p class="text">KIT LIMPEZA</p> 
+									<p class="text">1 PCT - Papel Higiênico</br>1 CAIXA 500g- Sabão em Pó</br>1 UND - Detergente Líquido</br>1 UND 90g - Sabonete</br>1 - Creme Dental</br>1 - Sabão em pedra</p>			
+								</div><!-- feature heading -->
+							</header>
+						
+					</div><!-- feature-item -->
+				</article>			
+			</div><!-- col 1 -->
 
 			<div class="col">
-
 				<article>
 					<div class="feature-item">
-						<i class="fa fa-3x fa-tablet"></i>
+						
 							<header>
 								<div class="feature-heading">
-									<h3 class="headline">Cesta 1</h3>
-									<p class="text">Lorem ipsum, Lorem ipsum. Lorem ipsum, Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>				
+									<h3 class="headline">Cesta Essencial</h3>
+									<p class="text">ALIMENTOS</p>
+									<p class="text">7 KG - Açúcar</br>7 KG - Arroz</br> 3 KG - Feijão</br>2 PCT	- Macarrão Espaguete</br>2 KG - Farinha</br>3 Lata - Óleo de Soja</br>1 KG - Sal Refinado</br>1 PCT Grande - Leite em Pó</br>1 PCT Grande - Café</br>1 - Achocolatado</br>1 - Extrato de Tomate</br>1 Lata - Salsicha</br>1 Lata - Sardinha</br>1 Pote - Tempero Completo</br>2 PCT - Biscoito Cream Crack</br> 2 - Manteiga</br>1 PCT - Goiabada</br>1 Vinagre</br>1 - Cartela de Ovos</p>
+									<P class="text">KIT LIMPEZA</P>
+									<p class="text">1 PCT - Papel Higiênico</br>1 CAIXA 1 KG - Sabão em Pó</br>1 UND - Detergente Líquido</br>2 UND 90g - Sabonete</br>1 PCT - Esponja de aço</br>1 UND - Creme Dental</br>1 UND - Amaciante</br>1 UND - Desinfetante</p>				
 								</div><!-- feature heading -->
 							</header>
 						
 					</div><!-- feature-item -->
 				</article>
-				
 			</div><!-- col 1 -->
-						<div class="col">
 
+			<div class="col">
 				<article>
 					<div class="feature-item">
-						<i class="fa fa-3x fa-lemon-o"></i>
+						
 							<header>
 								<div class="feature-heading">
-									<h3 class="headline">Cesta 2</h3>
-									<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>				
+									<h3 class="headline">Cesta Premium</h3>
+									<p class="text">ALIMENTOS</p>
+									<p class="text">10 KG - Açúcar</br>10 KG - Arroz</br>5 KG - Feijão</br>4 PCT	- Macarrão Espaguete</br>2 KG - Farinha</br>4 Lata - Óleo de Soja</br>1 KG - Sal Refinado</br>1 PCT Grande - Leite em Pó</br>1 PCT Grande - Café</br>1 - Achocolatado</br>1 - Flocós</br>1 - Extrato de Tomate</br>1 Lata - Salsicha</br>1 Lata - Sardinha</br>1 Pote - Tempero Completo</br>2 PCT - Biscoito Cream Crack</br> 2 - Manteiga</br>1 PCT - Goiabada</br>1 Vinagre</br>1 - Bandeja de Carne Seca</br>1 UND - Cartela de Ovos</br>OU</br>1 - Frango</p>
+									<P class="text">KIT LIMPEZA</P>
+									<p class="text">2 PCT - Papel Higiênico</br>1 CAIXA 1 KG - Sabão em Pó</br>1 UND - Detergente Líquido</br>3 UND 90g - Sabonete</br>1 PCT - Esponja de aço</br>1 UND - Creme Dental</br>1 UND - Amaciante</br>1 UND - Desinfetante</br>1 UND - Sabão em pedra</br>1 UND - Esponja Lava Louça</p>				
 								</div><!-- feature heading -->
 							</header>
 						
 					</div><!-- feature-item -->
 				</article>
-				
 			</div><!-- col 1 -->
+
 		</div><!-- container -->
 	</div><!-- feature -->
 </section>
 
-<footer>
+<footer id="contato">
 	<div class="footer">
 		<div class="container">
 			<h4 class="headline text-center">Vamos marcar um cafezinho?</h4>
@@ -196,6 +212,11 @@
 					</form>
 					</div><!-- col-lg-12 -->
 				</div><!-- row -->
+				<div class="row tel">
+					<div class="col">
+						<h3 class="headline text-center">(92) 0000-0000</h3>
+					</div><!-- col -->
+				</div><!-- row -->
 				<div class="row">
 					<div class="col-md-5">
 						<span class="text">Cest'In © Cestas Alimentícias. Todos os direitos reservados</span>
@@ -211,9 +232,9 @@
 							<li>
 								<a href="#"><i class="fa fa-instagram"></i></a>
 							</li>
-						</ul>
-					</div>
-				</div>
+						</ul><!-- ul -->
+					</div><!-- col -->
+				</div><!-- row -->
 
 		</div><!-- container -->
 	</div><!-- footer -->
@@ -222,6 +243,25 @@
 
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/tether.min.js"></script>
-<script src="js/bootstrap.min.js"></script>		
+<script src="js/bootstrap.min.js"></script>
+<script>
+var $doc = $('html, body');
+$('.scrollSuave').click(function() {
+    $doc.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 900);
+    return false;
+});
+/* Efeito da barra de menu */
+$(document).on("scroll",function(){
+  if($(document).scrollTop()>200){ //QUANDO O SCROLL PASSAR DOS 100px DO TOPO
+    $(".header").addClass("menu"); //TROCA P CLASSE MENOR
+    $("#bars").removeClass("fa-inverse");
+  } else{
+    $(".header").removeClass("menu"); //VOLTA P MENU GRANDE ORIGINAL
+    $("#bars").addClass("fa-inverse");
+  }
+});
+</script>		
 </body>	
 </html>

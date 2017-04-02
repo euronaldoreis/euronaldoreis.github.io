@@ -10,15 +10,35 @@
 	height: 60px;
 	padding-left: 80px;
 	padding-top: 0.5rem;
-	background-color: #fff;
+	margin-top: 1rem;
+	
+}
+.header h1 {
+	background: url(../img/logo.png) no-repeat;
+	width: 200px;
+	height: 200px;
+
 }
 .nav-link {
-	color: #000;
+	color: #fff;
 	font-weight: bold;
+	transition: .5s;
 }
 .nav-link:hover {
 	text-decoration: underline;
-	color: #000;
+	color: #292b2c;
+}
+.header.menu {
+	transition: .5s;
+    background-color: #fff;
+    margin-top: 0rem;
+}
+.header.menu h1 {
+	background: url(../img/logo2.png) no-repeat;
+}
+.header.menu .nav-link{
+    color: #292b2c;
+    font-weight: bold;
 }
 
 /* Global texts */
@@ -26,7 +46,7 @@
 	font-size: 2rem;
 }
 .description {
-	font-size: 1.3rem;
+	font-size: 1.0rem;
 }
 .text {
 	font-size: 0.85rem;
@@ -35,6 +55,7 @@
 
 /* Carousel */
 .carousel-inner {
+	padding-top: 3rem;
 	margin-top: 3rem;
 	height: 520px;
 	color: #fff;	
@@ -76,19 +97,29 @@
 	margin-top: 10px;
 }
 
+/* Empresa */
+.empresa {
+	padding: 5rem 0; 
+}
+
 /* Feature */
 .feature {
 	padding: 5rem 0;
+	background-color: #eef1f2;
 }
 .feature .row {
 	margin-top: 5rem;
 }
+.feature .col {
+	background-color: #fff;
+	margin-left: 30px;
+}
 .feature .feature-item {
-	padding: 0 2rem;
+	padding: 1rem 2rem;
 }
 .feature .feature-item .fa {
 	position: absolute;
-	left: 0;
+	left: 10px;
 }
 .feature .feature-item .feature-heading {
 	margin-left: 2rem;
@@ -109,10 +140,10 @@
 	color: #898989;
 }
 .footer form {
-	margin: 4rem 0;
+	margin-top: 4rem;
 }
 .footer .form-group textarea.form-control {
-	height: 220px;
+	height: 219px;
 }
 .footer .form-group input, .form-group textarea {
 	padding: 20px;
@@ -136,6 +167,10 @@
 	padding-left: 0;
 	margin-left: -5px;
 	list-style: none;
+}
+.footer .tel {
+	padding: 2rem 0;
+	margin-bottom: 2rem;
 }
 .footer .list-inline > li {
 	display: inline-block;
